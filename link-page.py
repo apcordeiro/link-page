@@ -3,7 +3,7 @@ import pandas as pd
 from pyreadr import read_r
 import requests
 
-response = requests.get("http://127.0.0.1:8000/dataframe/")
+response = requests.get("http://0.0.0.0:8000/dataframe/")
 response.raise_for_status()
 data = response.json()
 
