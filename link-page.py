@@ -3,7 +3,7 @@ import pandas as pd
 from pyreadr import read_r
 import requests
 
-response = requests.get("http://2.82.186.153:8000/dataframe/")
+response = requests.get("https://link-page-dkwhprymkjuwb9tagds5jy.streamlit.app/dataframe")
 response.raise_for_status()
 data = response.json()
 
